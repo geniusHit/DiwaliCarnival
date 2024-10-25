@@ -1,0 +1,162 @@
+.banner{
+    background-image:linear-gradient(rgba(131, 131, 131, 0.66), rgba(131, 131, 131, 0.66)), url("assets/Diwali-Culinary-Delights.webp");
+}
+
+.banner h1{
+    font-family: dosis;
+    font-size: 40pt;
+}
+
+#ticketTable td, th{
+    border: 1px solid black;
+    padding: 8px 50px;
+}
+#parkingTable td, th{
+    border: 1px solid black;
+    padding: 8px 50px;
+}
+
+#highlights div{
+    margin-top: 30px;
+    font-size: 14pt;
+}
+
+#parking b{
+    font-weight: 600;
+}
+
+.keyBox li:hover{
+    text-decoration: underline;
+}
+.keyBox li{
+    margin-bottom: 3px;
+}
+.keyBox a{
+    color:black;
+    text-decoration: none;
+}
+
+@media (max-width:580px)
+{
+    .banner h1{
+        font-size: 8vw;
+    }
+    .scheduleButton{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .scheduleButton button{
+        width: 90%;
+        padding: 20px 0px;
+    }
+    #highlights{
+        width:85%;
+        margin: auto;
+        padding:0px 10px;
+    }
+}
+
+@media (min-width:992px) {
+    .singersBox{
+        padding:0px !important;
+    }
+    .singerImg{
+        width: 20% !important;
+    }
+    .singerText{
+        width:80% !important;
+        padding: 5px !important;
+        margin: 0px !important;
+    }
+}
+
+@media (max-width:576px)
+{
+    .hotels{
+        grid-template-columns:100% !important;
+    }
+    #schedule, #venue, #gallery{
+        padding: 0px 10px !important;
+    }
+    #gallery{
+        position: relative;
+    }
+    #gallery img{
+        width: 100% !important;
+    }
+    .galleryBox{
+        justify-content: center !important;
+        grid-template-columns: 100% !important;
+    }
+    .singersBox{
+        flex-direction: column !important;
+        padding: 0px !important;
+    }
+    .singerImg{
+        width:100% !important;
+    }
+    .singerText{
+        padding: 5px !important;
+        margin: 0px !important;
+        width: 100% !important;
+    }
+    #contactForm{
+        padding: 10px !important;
+    }
+    #contactForm label{
+        margin-top:5px !important;
+        margin-bottom:5px !important;
+    }
+    #contactForm span{
+        display: inline !important;
+        width: auto !important;
+        height: auto !important;
+    }
+    .name input{
+        width: auto;
+    }
+    .name{
+        gap:10px !important;
+    }
+    h3{
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    #contactForm textarea{
+        height: 170px !important;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .singerBox{
+        padding: 0px !important;
+    }
+    .singerImg{
+        width: 20% !important;
+    }
+    .singerText{
+        width: 80% !important;
+    }
+}
+
+@media screen and (min-width:582px) and (max-width:992px)
+{
+    .hotels{
+        grid-template-columns:50% 50% !important;
+    }
+    .galleryBox{
+        grid-template-columns: 50% 50% !important;
+    }
+    .singersBox{
+        padding:0px !important;
+    }
+    .singerImg{
+        width:35% !important;
+    }
+    .singerText{
+        width:65% !important;
+        padding:10px !important;
+        margin: 0px !important;
+    }
+}
